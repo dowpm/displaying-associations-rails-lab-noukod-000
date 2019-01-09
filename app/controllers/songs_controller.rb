@@ -1,6 +1,6 @@
 class SongsController < ApplicationController
   before_action :set_song, only: [ :show]
-  
+
   def index
   end
 
@@ -53,4 +53,3 @@ class SongsController < ApplicationController
     params.require(:song).permit(:title)
   end
 end
-
